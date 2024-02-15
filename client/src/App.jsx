@@ -1,16 +1,16 @@
 // import React from 'react'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Signin from './pages/Signin'
-import Signup from './pages/Signup'
-import Dashboard from './pages/Dashboard'
-import Projects from './pages/Projects'
-import Header from './components/Header'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import Projects from "./pages/Projects";
+import Header from "./components/Header";
 
 export default function App() {
   return (
-    <BrowserRouter className='text-3xl text-red-500'>
+    <BrowserRouter className="text-3xl text-red-500">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,5 +21,5 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
