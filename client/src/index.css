@@ -36,6 +36,12 @@ body {
   text-decoration: underline;
 }
 
+.post-content code {
+  display: inline-block;
+  padding-inline: 0.5rem;
+  border-radius: 0.25rem;
+}
+
 .dark .post-content code {
   color: black;
   display: inline-block;
